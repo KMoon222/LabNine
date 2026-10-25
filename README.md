@@ -1,1 +1,3 @@
-# LabNine
+Object Pool: There are only 8 bullet objects, and they are stored off screen when not in use. When a bullet object is needed, an inactive one is taken from the pool and set active, and does what it needs to do before becoming inactive again. 
+Builder: The enemies are built from the EnemyBuilder class, so their properties of name, health, and speed are easily changeable. When created, these properties are used, so some enemies have a higher speed, and some have higher health. 
+Observer: The game manager is an observer, and the enemy movement scripts call the event to update the score. The score is easily updated without the need for scripts to know about other scripts. 
